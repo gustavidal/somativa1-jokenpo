@@ -8,6 +8,6 @@ public class Jokenpo {
 
         Jogador partida = new Jogador();
 
-        partida.verJogada();
+        partida.receberNumero();
     }
 }
