@@ -75,5 +75,15 @@ public class Jogador {
         } else {
             resultado = "Derrota! O computador venceu...";
         }
+
+        exibirResultados();
+    }
+
+    public void exibirResultados(){
+        System.out.println("-------------------------------------------");
+        System.out.println("VOCÊ JOGOU:  " + jogada);
+        System.out.println("O COMPUTADOR JOGOU:  " + jogadaComputador);
+        System.out.println("RESULTADO FINAL:  " + resultado);
+        System.out.println("-------------------------------------------");
     }
 }
