@@ -59,5 +59,21 @@ public class Jogador {
         } else {
             jogadaComputador = "Tesoura";
         }
+
+        condicionarJogadas();
+    }
+
+    public void condicionarJogadas(){
+        if (jogada.equals(jogadaComputador)){
+            resultado = "Empate! Os dois jogaram iguais.";
+        } else if (jogada.equals("Pedra") && jogadaComputador.equals("Tesoura")){
+            resultado = "Vitória! Pedra vence tesoura, né?";
+        } else if (jogada.equals("Papel") && jogadaComputador.equals("Pedra")){
+            resultado = "Vitória! O papel embrulhou a pedra.";
+        } else if (jogada.equals("Tesoura") && jogadaComputador.equals("Papel")){
+            resultado = "Vitória! Tesouramos o papel!";
+        } else {
+            resultado = "Derrota! O computador venceu...";
+        }
     }
 }
