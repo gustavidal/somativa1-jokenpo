@@ -41,5 +41,11 @@ public class Jogador {
             System.out.println("Valor inválido. Jogue novamente.");
             receberNumero();
         }
+
+        receberNumeroDoComputador();
+    }
+
+    public void receberNumeroDoComputador(){
+        numeroJogadaComputador = random.nextInt(3) + 1;
     }
 }
