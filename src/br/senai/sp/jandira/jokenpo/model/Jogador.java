@@ -16,7 +16,7 @@ public class Jogador {
 
     public void receberNumero(){
         System.out.println("-------------------------------------------");
-        System.out.println("-------- VAMOS JOGAR JOKENPÔ! --------");
+        System.out.println("----------- VAMOS JOGAR JOKENPÔ -----------");
         System.out.println("-------------------------------------------");
         System.out.println("Escolha uma opção: ");
         System.out.println("(1) Pedra");
