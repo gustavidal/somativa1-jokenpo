@@ -23,7 +23,7 @@ public class Jogador {
         System.out.println("(2) Papel");
         System.out.println("(3) Tesoura");
         System.out.println("-------------------------------------------");
-        System.out.print("Digite a sua escolha:  ");
+        System.out.print("Digite a sua escolha: ");
         numeroJogada = leitor.nextInt();
         leitor.nextLine();
 
@@ -39,7 +39,6 @@ public class Jogador {
             jogada = "Tesoura";
         } else {
             System.out.println("Valor inválido. Jogue novamente.");
-            receberNumero();
         }
 
         receberNumeroDoComputador();
@@ -85,5 +84,26 @@ public class Jogador {
         System.out.println("O COMPUTADOR JOGOU:  " + jogadaComputador);
         System.out.println("RESULTADO FINAL:  " + resultado);
         System.out.println("-------------------------------------------");
+
+        receberDecisao();
+    }
+
+    public void receberDecisao(){
+        System.out.println("");
+        System.out.print("E agora. Quer jogar de novo? (Digite S ou N): ");
+        decisao = leitor.nextLine();
+
+        condicionarDecisao();
+    }
+
+    public void condicionarDecisao(){
+        if (decisao.equalsIgnoreCase("S")){
+            System.out.println("VAMOS JOGAR DE NOVO!");
+            receberNumero();
+        } else if (decisao.equalsIgnoreCase("N")){
+            System.out.println("Sem problemas. Foi incrível jogar com você. Até mais : D !");
+        } else {
+            System.out.println("Desculpe, essa opção não é válida.");
+        }
     }
 }
