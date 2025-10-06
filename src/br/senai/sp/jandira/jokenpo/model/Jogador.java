@@ -90,7 +90,7 @@ public class Jogador {
 
     public void receberDecisao(){
         System.out.println("");
-        System.out.print("E agora. Quer jogar de novo? (Digite S ou N): ");
+        System.out.print("E agora? Quer jogar de novo (S/N)?: ");
         decisao = leitor.nextLine();
 
         condicionarDecisao();
@@ -98,12 +98,11 @@ public class Jogador {
 
     public void condicionarDecisao(){
         if (decisao.equalsIgnoreCase("S")){
-            System.out.println("VAMOS JOGAR DE NOVO!");
             receberNumero();
         } else if (decisao.equalsIgnoreCase("N")){
-            System.out.println("Sem problemas. Foi incrível jogar com você. Até mais : D !");
+            System.out.println("Sem problemas. Foi incrível jogar com você. Até mais :D !");
         } else {
-            System.out.println("Desculpe, essa opção não é válida.");
+            System.out.println("Desculpe, essa opção não é válida. O jogo será encerrado.");
         }
     }
 }
