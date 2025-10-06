@@ -47,5 +47,17 @@ public class Jogador {
 
     public void receberNumeroDoComputador(){
         numeroJogadaComputador = random.nextInt(3) + 1;
+
+        verificarJogadaDoComputador();
+    }
+
+    public void verificarJogadaDoComputador(){
+        if (numeroJogadaComputador == 1){
+            jogadaComputador = "Pedra";
+        } else if (numeroJogadaComputador == 2){
+            jogadaComputador = "Papel";
+        } else {
+            jogadaComputador = "Tesoura";
+        }
     }
 }
